@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sit Stay Forever - Waterless Pet Shampoo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #4da0e6;
+            --secondary-green: #5bbf95;
+            --accent-beige: #f8f3e6;
+            --text-dark: #2d3e50;
+            --text-light: #6d7b8c;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+        
+        .module {
+            margin-bottom: 20px;
+            position: relative;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        /* Hero Module */
+        .hero-module {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+
+
+        .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.brand-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+        
+       
+        
+        .hero-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-image {
+            max-width: 400px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, var(--accent-beige), #f0e9d5);
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            color: var(--text-dark);
+            font-size: 1.2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Benefits Module */
+        .benefits-module {
+            padding: 40px 20px;
+            background-color: var(--accent-beige);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .benefit-item {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+        
+        /* Comparison Module */
+        .comparison-module {
+            padding: 40px 20px;
+            background-color: var(--white);
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .comparison-table th, .comparison-table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .comparison-table th {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+        
+        .our-product {
+            background-color: rgba(77, 160, 230, 0.1);
+        }
+        
+        /* How To Use Module */
+        .usage-module {
+            padding: 40px 20px;
+            background-color: var(--accent-beige);
+        }
+        
+        .steps-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .step {
+            flex: 0 0 30%;
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        /* Ingredients Module */
+        .ingredients-module {
+            padding: 40px 20px;
+            background-color: var(--white);
+        }
+        
+        .ingredients-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .ingredient-item {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--accent-beige);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+.bran-logo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+        /* Testimonials Module */
+        .testimonials-module {
+            padding: 40px 20px;
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+        
+        .testimonials-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .testimonial {
+            flex: 0 0 48%;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+        }
+        
+        /* Call to Action Module */
+        .cta-module {
+            padding: 60px 20px;
+            background-color: var(--secondary-green);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--white);
+            color: var(--secondary-green);
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .step {
+                flex: 0 0 100%;
+            }
+            
+            .ingredients-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonial {
+                flex: 0 0 100%;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Module Titles */
+        .module-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        
+        /* Brand Elements */
+        .brand-header {
+            background-color: var(--white);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-blue);
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .brand-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+        
+        .brand-tagline {
+            font-style: italic;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+        
+        /* Image Placeholders */
+        .image-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            color: var(--text-light);
+            font-size: 1rem;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        /* Amazon Compliance Note */
+        .amazon-note {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+    <!-- Brand Header -->
+  <div class="hero-content">
+    <div class="brand-header">
+        <div class="brand-logo">
+            <img src="https://i.postimg.cc/WbNxLCrg/Gentle-dogs-2.jpg" alt="SIT STAY FOREVER Logo">
+        </div>
+        <div class="brand-tagline">
+            Healthier Pets, Healthier People, Healthier Planet
+        </div>
+    </div>
+</div>
+
+
+    <!-- Benefits Module -->
+    <div class="module benefits-module">
+        <div class="container">
+            <h2 class="module-title">Why Choose Our Dry Shampoo?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Great for Sensitive Skin</h3>
+                    <p>Gentle, natural formula perfect for pets with delicate skin</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shower"></i>
+                    </div>
+                    <h3>Quick Clean Between Baths</h3>
+                    <p>Keep your pet fresh without the time and hassle of a full bath</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>No Harsh Chemicals</h3>
+                    <p>Free from artificial fragrances and harmful ingredients</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tint-slash"></i>
+                    </div>
+                    <h3>No Water, No Mess</h3>
+                    <p>Easy application with no watery mess to clean up afterwards</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<br>
+<br>
+<br>
+
+
+    <!-- Comparison Module -->
+
+ <div class="bran-logo">
+            <img src="https://i.postimg.cc/65KY4mhq/doge2.jpg" alt="SIT STAY FOREVER Logo">
+        </div>
+
+
+
+    <div class="module comparison-module">
+        <div class="container">
+            <h2 class="module-title">The Sit Stay Forever Difference</h2>
+            <table class="comparison-table">
+                <tr>
+                    <th>Feature</th>
+                    <th>Traditional Shampoo</th>
+                    <th class="our-product">Our Dry Shampoo</th>
+                </tr>
+                <tr>
+                    <td>Water Required</td>
+                    <td><i class="fas fa-times" style="color: #ff4d4d;"></i></td>
+                    <td class="our-product"><i class="fas fa-check" style="color: #5bbf95;"></i></td>
+                </tr>
+                <tr>
+                    <td>Time Required</td>
+                    <td>30+ minutes</td>
+                    <td class="our-product">5 minutes</td>
+                </tr>
+                <tr>
+                    <td>Mess Factor</td>
+                    <td>High</td>
+                    <td class="our-product">Low</td>
+                </tr>
+                <tr>
+                    <td>Natural Ingredients</td>
+                    <td>Sometimes</td>
+                    <td class="our-product">Always</td>
+                </tr>
+                <tr>
+                    <td>Pet Stress</td>
+                    <td>High</td>
+                    <td class="our-product">Low</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- How To Use Module -->
+    <div class="module usage-module">
+        <div class="container">
+            <h2 class="module-title">How To Use</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="image-placeholder" style="height: 150px; margin-bottom: 15px;">
+                        [Image: Applying powder]
+                    </div>
+                    <h3>Apply</h3>
+                    <p>Sprinkle a small amount of powder onto your pet's coat, focusing on soiled areas</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="image-placeholder" style="height: 150px; margin-bottom: 15px;">
+                        [Image: Massaging into coat]
+                    </div>
+                    <h3>Massage</h3>
+                    <p>Gently massage the powder into the coat with your fingers or a brush</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="image-placeholder" style="height: 150px; margin-bottom: 15px;">
+                        [Image: Brushing out powder]
+                    </div>
+                    <h3>Brush Out</h3>
+                    <p>Thoroughly brush your pet's coat to remove excess powder and dirt</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ingredients Module -->
+    <div class="module ingredients-module">
+        <div class="container">
+            <h2 class="module-title">Natural Ingredients</h2>
+            <div class="ingredients-grid">
+                <div class="ingredient-item">
+                    <div class="image-placeholder" style="height: 120px; margin-bottom: 15px;">
+                        [Image: Oatmeal]
+                    </div>
+                    <h3>Oatmeal</h3>
+                    <p>Soothes and protects sensitive skin</p>
+                </div>
+                <div class="ingredient-item">
+                    <div class="image-placeholder" style="height: 120px; margin-bottom: 15px;">
+                        [Image: Kaolin Clay]
+                    </div>
+                    <h3>Kaolin Clay</h3>
+                    <p>Absorbs oils and impurities</p>
+                </div>
+                <div class="ingredient-item">
+                    <div class="image-placeholder" style="height: 120px; margin-bottom: 15px;">
+                        [Image: Aloe Vera]
+                    </div>
+                    <h3>Aloe Vera</h3>
+                    <p>Moisturizes and conditions coat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Module -->
+    <div class="module testimonials-module">
+        <div class="container">
+            <h2 class="module-title">What Pet Parents Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="image-placeholder" style="height: 120px; margin-bottom: 15px;">
+                        [Customer Image with Pet]
+                    </div>
+                    <p class="testimonial-text">"My water-phobic Golden Retriever finally smells fresh between baths! This product is a game-changer."</p>
+                    <p class="testimonial-author">- Sarah K., Maine</p>
+                </div>
+                <div class="
